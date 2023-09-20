@@ -1,0 +1,29 @@
+.container {
+  grid-template-areas:
+    "cabecalho"
+    "conteudo"
+    "lateral";
+}
+
+header {
+  grid-area: cabecalho;
+}
+
+main {
+  grid-area: conteudo;
+}
+
+aside {
+  grid-area: lateral;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr) 250px;
+    grid-template-rows: 50px 3fr 1fr;
+    grid-template-areas:
+      "cabecalho cabecalho cabecalho"
+      "conteudo conteudo lateral"
+      "conteudo conteudo lateral";
+  }
+}
