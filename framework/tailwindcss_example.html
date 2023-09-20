@@ -5,6 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              seaweed: {
+                50: "#f2fce9",
+                100: "#e1f7d0",
+                200: "#c5f0a6",
+                300: "#a0e472",
+                400: "#7fd447",
+                500: "#60b929",
+                600: "#47941c",
+                700: "#38711a",
+                800: "#305a1a",
+                900: "#203a14",
+                950: "#132a09",
+              },
+            },
+          },
+        },
+      };
+    </script>
     <title>TailwindCSS Example</title>
   </head>
   <body class="flex h-screen justify-center items-center">
@@ -25,7 +48,7 @@
           </blockquote>
           <figcaption class="font-medium">
             <div class="text-sky-500 dark:text-sky-400">Rudnei Santiago</div>
-            <div class="text-slate-700 dark:text-slate-500">
+            <div class="text-slate-700 dark:text-seaweed-950">
               Tutor na Coder House
             </div>
           </figcaption>
